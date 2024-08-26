@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35B9DD39-1B38-40E7-AE21-2E2B32FE9763}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pastahane_programı</RootNamespace>
+    <AssemblyName>pastahane_programı</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anamenü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anamenü.Designer.cs">
+      <DependentUpon>anamenü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giriş.Designer.cs">
+      <DependentUpon>giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hesaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesaplar.Designer.cs">
+      <DependentUpon>hesaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="siparişler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparişler.Designer.cs">
+      <DependentUpon>siparişler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasa.Designer.cs">
+      <DependentUpon>kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masalar.Designer.cs">
+      <DependentUpon>masalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mesaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mesaj.Designer.cs">
+      <DependentUpon>mesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="evesipariş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="evesipariş.Designer.cs">
+      <DependentUpon>evesipariş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yönetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yönetim.Designer.cs">
+      <DependentUpon>yönetim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anamenü.resx">
+      <DependentUpon>anamenü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giriş.resx">
+      <DependentUpon>giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesaplar.resx">
+      <DependentUpon>hesaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparişler.resx">
+      <DependentUpon>siparişler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasa.resx">
+      <DependentUpon>kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masalar.resx">
+      <DependentUpon>masalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mesaj.resx">
+      <DependentUpon>mesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="evesipariş.resx">
+      <DependentUpon>evesipariş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yönetim.resx">
+      <DependentUpon>yönetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75255.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75255 - Kopya - Kopya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Yeni klasör %282%29\tik-isareti-nasil-yapilir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Yeni klasör %282%29\delete-1693987-1437717.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Yeni klasör %282%29\email-inbox-letter-mail-message-messages-icon-web-ui-message-icon-png-512_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Yeni klasör %282%29\clear-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Yeni klasör %282%29\images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
